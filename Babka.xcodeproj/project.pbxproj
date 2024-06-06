@@ -14,6 +14,9 @@
 		6D46A0C72C12052F00F951A1 /* BabkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0C62C12052F00F951A1 /* BabkaTests.swift */; };
 		6D46A0D12C12052F00F951A1 /* BabkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0D02C12052F00F951A1 /* BabkaUITests.swift */; };
 		6D46A0D32C12052F00F951A1 /* BabkaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0D22C12052F00F951A1 /* BabkaUITestsLaunchTests.swift */; };
+		6D46A0E12C12088400F951A1 /* MongoDBConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */; };
+		6D46A0E42C1208D800F951A1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D46A0E32C1208D800F951A1 /* RealmSwift */; };
+		6D46A0E62C12090A00F951A1 /* atlasConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D46A0E52C12090A00F951A1 /* atlasConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		6D46A0CC2C12052F00F951A1 /* BabkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D46A0D02C12052F00F951A1 /* BabkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabkaUITests.swift; sourceTree = "<group>"; };
 		6D46A0D22C12052F00F951A1 /* BabkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBConfig.swift; sourceTree = "<group>"; };
+		6D46A0E52C12090A00F951A1 /* atlasConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = atlasConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D46A0E42C1208D800F951A1 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,7 @@
 		6D46A0B42C12052D00F951A1 /* Babka */ = {
 			isa = PBXGroup;
 			children = (
+				6D46A0DF2C12084800F951A1 /* Config */,
 				6D46A0B52C12052D00F951A1 /* BabkaApp.swift */,
 				6D46A0B72C12052D00F951A1 /* ContentView.swift */,
 				6D46A0B92C12052F00F951A1 /* Assets.xcassets */,
@@ -127,6 +134,15 @@
 			path = BabkaUITests;
 			sourceTree = "<group>";
 		};
+		6D46A0DF2C12084800F951A1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */,
+				6D46A0E52C12090A00F951A1 /* atlasConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,9 @@
 			dependencies = (
 			);
 			name = Babka;
+			packageProductDependencies = (
+				6D46A0E32C1208D800F951A1 /* RealmSwift */,
+			);
 			productName = Babka;
 			productReference = 6D46A0B22C12052D00F951A1 /* Babka.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 6D46A0A92C12052D00F951A1;
+			packageReferences = (
+				6D46A0E22C1208D800F951A1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 6D46A0B32C12052D00F951A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D46A0BD2C12052F00F951A1 /* Preview Assets.xcassets in Resources */,
+				6D46A0E62C12090A00F951A1 /* atlasConfig.plist in Resources */,
 				6D46A0BA2C12052F00F951A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D46A0B82C12052D00F951A1 /* ContentView.swift in Sources */,
+				6D46A0E12C12088400F951A1 /* MongoDBConfig.swift in Sources */,
 				6D46A0B62C12052D00F951A1 /* BabkaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D46A0E22C1208D800F951A1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D46A0E32C1208D800F951A1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D46A0E22C1208D800F951A1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D46A0AA2C12052D00F951A1 /* Project object */;
 }
