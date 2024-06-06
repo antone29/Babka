@@ -17,6 +17,20 @@
 		6D46A0E12C12088400F951A1 /* MongoDBConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */; };
 		6D46A0E42C1208D800F951A1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D46A0E32C1208D800F951A1 /* RealmSwift */; };
 		6D46A0E62C12090A00F951A1 /* atlasConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D46A0E52C12090A00F951A1 /* atlasConfig.plist */; };
+		6D46A0EA2C120C8900F951A1 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6D46A0E32C1208D800F951A1 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6D46A0EF2C120F8800F951A1 /* TabOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0EE2C120F8800F951A1 /* TabOverView.swift */; };
+		6D46A0F12C120FDF00F951A1 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0F02C120FDF00F951A1 /* TransactionListView.swift */; };
+		6D46A0F32C120FE700F951A1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0F22C120FE700F951A1 /* CategoryView.swift */; };
+		6D46A0F52C120FF400F951A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0F42C120FF400F951A1 /* ProfileView.swift */; };
+		6D46A0F72C12100800F951A1 /* SpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0F62C12100800F951A1 /* SpendingView.swift */; };
+		6D46A0F92C12101500F951A1 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0F82C12101500F951A1 /* TransactionDetailView.swift */; };
+		6D46A0FB2C12106500F951A1 /* SetBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0FA2C12106500F951A1 /* SetBudgetView.swift */; };
+		6D46A0FD2C12108800F951A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0FC2C12108800F951A1 /* LoginView.swift */; };
+		6D46A0FF2C12109E00F951A1 /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0FE2C12109E00F951A1 /* LogoutButton.swift */; };
+		6D46A1022C1210BD00F951A1 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A1012C1210BD00F951A1 /* TransactionRow.swift */; };
+		6D46A1042C1210D800F951A1 /* OpenRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A1032C1210D800F951A1 /* OpenRealmView.swift */; };
+		6D46A1072C12111400F951A1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A1062C12111400F951A1 /* Extensions.swift */; };
+		6D46A1092C12112D00F951A1 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A1082C12112D00F951A1 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6D46A0EB2C120C8900F951A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D46A0EA2C120C8900F951A1 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6D46A0B22C12052D00F951A1 /* Babka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D46A0B52C12052D00F951A1 /* BabkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabkaApp.swift; sourceTree = "<group>"; };
@@ -49,6 +77,19 @@
 		6D46A0D22C12052F00F951A1 /* BabkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBConfig.swift; sourceTree = "<group>"; };
 		6D46A0E52C12090A00F951A1 /* atlasConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = atlasConfig.plist; sourceTree = "<group>"; };
+		6D46A0EE2C120F8800F951A1 /* TabOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOverView.swift; sourceTree = "<group>"; };
+		6D46A0F02C120FDF00F951A1 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		6D46A0F22C120FE700F951A1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		6D46A0F42C120FF400F951A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6D46A0F62C12100800F951A1 /* SpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingView.swift; sourceTree = "<group>"; };
+		6D46A0F82C12101500F951A1 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		6D46A0FA2C12106500F951A1 /* SetBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBudgetView.swift; sourceTree = "<group>"; };
+		6D46A0FC2C12108800F951A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6D46A0FE2C12109E00F951A1 /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
+		6D46A1012C1210BD00F951A1 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		6D46A1032C1210D800F951A1 /* OpenRealmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRealmView.swift; sourceTree = "<group>"; };
+		6D46A1062C12111400F951A1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6D46A1082C12112D00F951A1 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +141,12 @@
 		6D46A0B42C12052D00F951A1 /* Babka */ = {
 			isa = PBXGroup;
 			children = (
-				6D46A0DF2C12084800F951A1 /* Config */,
 				6D46A0B52C12052D00F951A1 /* BabkaApp.swift */,
-				6D46A0B72C12052D00F951A1 /* ContentView.swift */,
+				6D46A1052C1210ED00F951A1 /* Extensions */,
+				6D46A0ED2C120F6400F951A1 /* Models */,
+				6D46A0EC2C120F5E00F951A1 /* Views */,
+				6D46A1002C1210A300F951A1 /* ViewComponents */,
+				6D46A0DF2C12084800F951A1 /* Config */,
 				6D46A0B92C12052F00F951A1 /* Assets.xcassets */,
 				6D46A0BB2C12052F00F951A1 /* Preview Content */,
 			);
@@ -137,10 +181,52 @@
 		6D46A0DF2C12084800F951A1 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */,
 				6D46A0E52C12090A00F951A1 /* atlasConfig.plist */,
+				6D46A0E02C12088400F951A1 /* MongoDBConfig.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		6D46A0EC2C120F5E00F951A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D46A0B72C12052D00F951A1 /* ContentView.swift */,
+				6D46A0EE2C120F8800F951A1 /* TabOverView.swift */,
+				6D46A0F02C120FDF00F951A1 /* TransactionListView.swift */,
+				6D46A0F22C120FE700F951A1 /* CategoryView.swift */,
+				6D46A0F42C120FF400F951A1 /* ProfileView.swift */,
+				6D46A0F62C12100800F951A1 /* SpendingView.swift */,
+				6D46A0F82C12101500F951A1 /* TransactionDetailView.swift */,
+				6D46A0FA2C12106500F951A1 /* SetBudgetView.swift */,
+				6D46A0FC2C12108800F951A1 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D46A0ED2C120F6400F951A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D46A1002C1210A300F951A1 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6D46A0FE2C12109E00F951A1 /* LogoutButton.swift */,
+				6D46A1012C1210BD00F951A1 /* TransactionRow.swift */,
+				6D46A1032C1210D800F951A1 /* OpenRealmView.swift */,
+				6D46A1082C12112D00F951A1 /* ErrorView.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		6D46A1052C1210ED00F951A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D46A1062C12111400F951A1 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D46A0D62C12052F00F951A1 /* Build configuration list for PBXNativeTarget "Babka" */;
 			buildPhases = (
+				6D46A0EB2C120C8900F951A1 /* Embed Frameworks */,
 				6D46A0AE2C12052D00F951A1 /* Sources */,
 				6D46A0AF2C12052D00F951A1 /* Frameworks */,
 				6D46A0B02C12052D00F951A1 /* Resources */,
@@ -280,9 +367,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D46A1042C1210D800F951A1 /* OpenRealmView.swift in Sources */,
+				6D46A0F72C12100800F951A1 /* SpendingView.swift in Sources */,
 				6D46A0B82C12052D00F951A1 /* ContentView.swift in Sources */,
 				6D46A0E12C12088400F951A1 /* MongoDBConfig.swift in Sources */,
+				6D46A1022C1210BD00F951A1 /* TransactionRow.swift in Sources */,
+				6D46A0F92C12101500F951A1 /* TransactionDetailView.swift in Sources */,
+				6D46A0F32C120FE700F951A1 /* CategoryView.swift in Sources */,
+				6D46A0F12C120FDF00F951A1 /* TransactionListView.swift in Sources */,
+				6D46A0EF2C120F8800F951A1 /* TabOverView.swift in Sources */,
+				6D46A0FF2C12109E00F951A1 /* LogoutButton.swift in Sources */,
+				6D46A1072C12111400F951A1 /* Extensions.swift in Sources */,
+				6D46A0F52C120FF400F951A1 /* ProfileView.swift in Sources */,
+				6D46A0FD2C12108800F951A1 /* LoginView.swift in Sources */,
+				6D46A0FB2C12106500F951A1 /* SetBudgetView.swift in Sources */,
 				6D46A0B62C12052D00F951A1 /* BabkaApp.swift in Sources */,
+				6D46A1092C12112D00F951A1 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +559,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RebeccaAntonelli.Babka;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RoseAvalonIndustries.BabkaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -488,7 +588,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RebeccaAntonelli.Babka;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RoseAvalonIndustries.BabkaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
