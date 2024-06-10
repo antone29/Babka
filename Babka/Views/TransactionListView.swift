@@ -17,12 +17,12 @@ struct TransactionListView: View {
     let categories = Category.categories
     var body: some View {
         VStack {
-            Picker("Select a category", selection: $selection) {
-                ForEach(categories, id: \.self) {
-                    Text($0.name)
-                }
-            }
-            .pickerStyle(.menu)
+//            Picker("Select a category", selection: $selection) {
+//                ForEach(categories, id: \.self) {
+//                    Text($0.name)
+//                }
+//            }
+//            .pickerStyle(.menu)
             List {
                 // MARK: Transaction Groups
 //                ForEach(Array(transactionListVM.groupTranactionsByMonth()), id: \.key) { month,
@@ -38,8 +38,12 @@ struct TransactionListView: View {
 //                    }.listSectionSeparator(.hidden)
 //
 //                }
+               
                 ForEach(transactions, id: \.self) { transaction in
-                    TransactionRow(transaction: transaction)
+                    NavigationLink(destination: TransactionDetailView(transaction: transaction)){
+                        TransactionRow(transaction: transaction)
+                    }
+                
                     
                 }
             }

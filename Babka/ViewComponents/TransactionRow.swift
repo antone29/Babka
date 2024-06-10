@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 import SwiftUIFontIcon
 
 
@@ -57,5 +55,6 @@ struct TransactionRow: View {
             
         }
         .padding([.top, .bottom], 8)
+        
     }
 }
