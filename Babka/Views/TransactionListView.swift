@@ -93,11 +93,6 @@ struct TransactionListView: View {
 //        return groupedTransactions
 //    }
     
-    func temp () {
-        let tasksByDate = Dictionary(grouping: transactions) {
-            return Calendar.current.dateComponents([.year, .month, .day], from: $0.date)
-        }
-    }
 //
 //    let students = ["Kofi", "Abena", "Efua", "Kweku", "Akosua"]
 //    let studentsByLetter = Dictionary(grouping: students, by: { $0.first! })

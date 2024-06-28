@@ -17,7 +17,7 @@ typealias TransactionGroup = OrderedDictionary<String,  [Transaction]> //ordered
 
 typealias TransactionPrefixSum = [(String, Double)]
 
-//class TransactionListViewModel: DynamicProperty , ObservableObject{
+
 struct TransactionListViewModel: DynamicProperty {
   //  @Published var transactions: [Transaction] = []
     @ObservedResults(Transaction.self, sortDescriptor: SortDescriptor(keyPath: "_id", ascending: true)) var transactions
