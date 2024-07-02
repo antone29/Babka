@@ -37,6 +37,11 @@
 		6D46A1102C1220F000F951A1 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 6D46A10F2C1220F000F951A1 /* SwiftUIFontIcon */; };
 		6D46A1132C12214F00F951A1 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 6D46A1122C12214F00F951A1 /* SwiftUICharts */; };
 		6D46A1152C1224C200F951A1 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A1142C1224C200F951A1 /* AddTransactionView.swift */; };
+		6D6697C62C338B4B00A2539E /* ServerResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697C52C338B4B00A2539E /* ServerResponses.swift */; };
+		6D6697C82C338B6400A2539E /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697C72C338B6400A2539E /* ServerCommunicator.swift */; };
+		6D6697CA2C338BD600A2539E /* PlaidTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697C92C338BD600A2539E /* PlaidTestView.swift */; };
+		6D6697CC2C33B1B300A2539E /* StartLinkTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697CB2C33B1B300A2539E /* StartLinkTestView.swift */; };
+		6D6697CF2C33B38300A2539E /* LinkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D6697CE2C33B38300A2539E /* LinkKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,10 @@
 		6D46A10A2C12168700F951A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6D46A10C2C1220BA00F951A1 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		6D46A1142C1224C200F951A1 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		6D6697C52C338B4B00A2539E /* ServerResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponses.swift; sourceTree = "<group>"; };
+		6D6697C72C338B6400A2539E /* ServerCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
+		6D6697C92C338BD600A2539E /* PlaidTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidTestView.swift; sourceTree = "<group>"; };
+		6D6697CB2C33B1B300A2539E /* StartLinkTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLinkTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,7 @@
 				6D46A1102C1220F000F951A1 /* SwiftUIFontIcon in Frameworks */,
 				6D3F6FA42C18B2F400611177 /* Collections in Frameworks */,
 				6D46A0E42C1208D800F951A1 /* RealmSwift in Frameworks */,
+				6D6697CF2C33B38300A2539E /* LinkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +173,10 @@
 				6D46A0BB2C12052F00F951A1 /* Preview Content */,
 				6D46A10A2C12168700F951A1 /* Constants.swift */,
 				6D3F6FA52C18E46A00611177 /* TransactionListViewModel.swift */,
+				6D6697C52C338B4B00A2539E /* ServerResponses.swift */,
+				6D6697C72C338B6400A2539E /* ServerCommunicator.swift */,
+				6D6697C92C338BD600A2539E /* PlaidTestView.swift */,
+				6D6697CB2C33B1B300A2539E /* StartLinkTestView.swift */,
 			);
 			path = Babka;
 			sourceTree = "<group>";
@@ -266,6 +280,7 @@
 				6D46A10F2C1220F000F951A1 /* SwiftUIFontIcon */,
 				6D46A1122C12214F00F951A1 /* SwiftUICharts */,
 				6D3F6FA32C18B2F400611177 /* Collections */,
+				6D6697CE2C33B38300A2539E /* LinkKit */,
 			);
 			productName = Babka;
 			productReference = 6D46A0B22C12052D00F951A1 /* Babka.app */;
@@ -344,6 +359,7 @@
 				6D46A10E2C1220F000F951A1 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 				6D46A1112C12214F00F951A1 /* XCRemoteSwiftPackageReference "ChartView" */,
 				6D3F6FA22C18B2F400611177 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				6D6697CD2C33B38300A2539E /* XCRemoteSwiftPackageReference "plaid-link-ios" */,
 			);
 			productRefGroup = 6D46A0B32C12052D00F951A1 /* Products */;
 			projectDirPath = "";
@@ -397,15 +413,19 @@
 				6D46A0E12C12088400F951A1 /* MongoDBConfig.swift in Sources */,
 				6D46A1022C1210BD00F951A1 /* TransactionRow.swift in Sources */,
 				6D46A0F92C12101500F951A1 /* TransactionDetailView.swift in Sources */,
+				6D6697C62C338B4B00A2539E /* ServerResponses.swift in Sources */,
 				6D46A0F32C120FE700F951A1 /* CategoryView.swift in Sources */,
 				6D46A1152C1224C200F951A1 /* AddTransactionView.swift in Sources */,
+				6D6697CC2C33B1B300A2539E /* StartLinkTestView.swift in Sources */,
 				6D46A0F12C120FDF00F951A1 /* TransactionListView.swift in Sources */,
 				6D46A0FF2C12109E00F951A1 /* LogoutButton.swift in Sources */,
 				6D46A1072C12111400F951A1 /* Extensions.swift in Sources */,
 				6D46A0F52C120FF400F951A1 /* ProfileView.swift in Sources */,
 				6D46A0FD2C12108800F951A1 /* LoginView.swift in Sources */,
+				6D6697CA2C338BD600A2539E /* PlaidTestView.swift in Sources */,
 				6D46A0FB2C12106500F951A1 /* SetBudgetView.swift in Sources */,
 				6D46A0B62C12052D00F951A1 /* BabkaApp.swift in Sources */,
+				6D6697C82C338B6400A2539E /* ServerCommunicator.swift in Sources */,
 				6D46A1092C12112D00F951A1 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,6 +790,14 @@
 				minimumVersion = 1.5.5;
 			};
 		};
+		6D6697CD2C33B38300A2539E /* XCRemoteSwiftPackageReference "plaid-link-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/plaid/plaid-link-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -792,6 +820,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6D46A1112C12214F00F951A1 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		6D6697CE2C33B38300A2539E /* LinkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D6697CD2C33B38300A2539E /* XCRemoteSwiftPackageReference "plaid-link-ios" */;
+			productName = LinkKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
