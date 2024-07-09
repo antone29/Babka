@@ -23,7 +23,8 @@ struct BabkaApp: SwiftUI.App {
     
     var body: some Scene {
         WindowGroup {
-            PlaidTestView()
+            //PlaidTestView()
+            BaseView()
 //            ContentView(app: app)
 //                .environmentObject(errorHandler)
 ////                .environmentObject(transactionListVM)

@@ -7,8 +7,24 @@
 
 import SwiftUI
 
-struct PlaidTestView: View {
+struct PlaidTestView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = PlaidLinkViewController
     
+    func makeUIViewController(context: Context) -> PlaidLinkViewController {
+        let vc = PlaidLinkViewController()
+        
+        return vc
+    }
+    
+    func updateUIViewController(_ uiViewController: PlaidLinkViewController, context: Context) {
+        //
+    }
+    
+    
+    
+}
+
+struct BaseView: View {
     
     let communicator = ServerCommunicator()
     @State private var simpleCallResults = ""
@@ -22,7 +38,7 @@ struct PlaidTestView: View {
             VStack{
                 Text(userLabel)
                 NavigationLink("Connect to Bank") {
-                    StartLinkTestView()
+                    PlaidTestView()
                 }
                 
                 Button("Make a simple call") {

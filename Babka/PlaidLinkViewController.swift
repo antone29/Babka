@@ -5,26 +5,16 @@
 //  Created by Bekki Antonelli on 7/1/24.
 //
 
-import SwiftUI
+
+import UIKit
 import LinkKit
 
-struct StartLinkTestView: View {
-    
-    @State var isStartLinkButtonEnabled = false
-    
-    var body: some View {
-        Button("Start"){
-            startLinkWasPressed()
-        }.disabled(!isStartLinkButtonEnabled)
-        .onAppear(perform: {
-           
-            fetchLinkToken()
-        })
-    }
-    
+class PlaidLinkViewController: UIViewController {
+
+    let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
     let communicator = ServerCommunicator()
-    @State var linkToken: String?
-//    var handler: Handler?
+    var linkToken: String?
+    var handler: Handler?
     
     
     private func createLinkConfiguration(linkToken: String) -> LinkTokenConfiguration {
@@ -44,7 +34,8 @@ struct StartLinkTestView: View {
         return linkTokenConfig
     }
     
-    func startLinkWasPressed() {
+
+    @objc func startLinkWasPressed2(_ sender: UIButton) {
         guard let linkToken = linkToken else {return}
         let config = createLinkConfiguration(linkToken: linkToken)
         
@@ -57,10 +48,11 @@ struct StartLinkTestView: View {
             print("hanlder creation error \(error)")
         }
     }
+
     
     private func exchangePublicTokenForAccessToken(_ publicToken: String) {
         // Exchange our public token for an access token
-        self.communicator.callMyServer(path: "server/swap_public_token", httpMethod: .post, params: ["public_token": publicToken]) {(result: Result<SwapPublicTokenResponse, ServerCommunicator.Error>) in
+        self.communicator.callMyServer(path: "/server/swap_public_token", httpMethod: .post, params: ["public_token": publicToken]) {(result: Result<SwapPublicTokenResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(_):
                 // TODO: actually look at the value of the respond
@@ -73,11 +65,12 @@ struct StartLinkTestView: View {
     
     
     private func fetchLinkToken() {
-        self.communicator.callMyServer(path: "server/generate_link_token", httpMethod: .post) { (result: Result<LinkTokenCreateResponse, ServerCommunicator.Error>) in
+      
+        self.communicator.callMyServer(path: "/server/generate_link_token", httpMethod: .post) { (result: Result<LinkTokenCreateResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(let response):
                 self.linkToken = response.linkToken
-                self.isStartLinkButtonEnabled = true
+                self.button.isEnabled = true
             case .failure(let error):
                 print(error)
             }
@@ -86,17 +79,23 @@ struct StartLinkTestView: View {
 
     }
     
-   
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    /*
-    // MARK: - Navigation
+        button.backgroundColor = .cyan
+        button.setTitle("Test Button", for: .normal)
+        button.addTarget(self, action: #selector(startLinkWasPressed2), for: .touchUpInside)
+        button.isEnabled = false
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        self.view.addSubview(button)
+        
+        fetchLinkToken()
     }
-    */
+    
+    @objc func buttonAction(sender: UIButton!) {
+      print("Button tapped")
+    }
+
 
 }
 
