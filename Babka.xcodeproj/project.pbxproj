@@ -42,8 +42,6 @@
 		6D6697CA2C338BD600A2539E /* PlaidTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697C92C338BD600A2539E /* PlaidTestView.swift */; };
 		6D6697CC2C33B1B300A2539E /* PlaidLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697CB2C33B1B300A2539E /* PlaidLinkViewController.swift */; };
 		6D6697CF2C33B38300A2539E /* LinkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D6697CE2C33B38300A2539E /* LinkKit */; };
-		6D6697D12C3490E900A2539E /* LinkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697D02C3490E900A2539E /* LinkController.swift */; };
-		6D6697D32C34913600A2539E /* PlaidContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6697D22C34913600A2539E /* PlaidContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,8 +108,6 @@
 		6D6697C72C338B6400A2539E /* ServerCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
 		6D6697C92C338BD600A2539E /* PlaidTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidTestView.swift; sourceTree = "<group>"; };
 		6D6697CB2C33B1B300A2539E /* PlaidLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidLinkViewController.swift; sourceTree = "<group>"; };
-		6D6697D02C3490E900A2539E /* LinkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkController.swift; sourceTree = "<group>"; };
-		6D6697D22C34913600A2539E /* PlaidContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidContentView.swift; sourceTree = "<group>"; };
 		6D6697D42C34927800A2539E /* Link.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Link.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				6D46A0B52C12052D00F951A1 /* BabkaApp.swift */,
+				6D6697D52C3CDB6400A2539E /* Plaid */,
 				6D46A1052C1210ED00F951A1 /* Extensions */,
 				6D46A0ED2C120F6400F951A1 /* Models */,
 				6D46A0EC2C120F5E00F951A1 /* Views */,
@@ -178,12 +175,6 @@
 				6D46A0BB2C12052F00F951A1 /* Preview Content */,
 				6D46A10A2C12168700F951A1 /* Constants.swift */,
 				6D3F6FA52C18E46A00611177 /* TransactionListViewModel.swift */,
-				6D6697C52C338B4B00A2539E /* ServerResponses.swift */,
-				6D6697C72C338B6400A2539E /* ServerCommunicator.swift */,
-				6D6697C92C338BD600A2539E /* PlaidTestView.swift */,
-				6D6697CB2C33B1B300A2539E /* PlaidLinkViewController.swift */,
-				6D6697D02C3490E900A2539E /* LinkController.swift */,
-				6D6697D22C34913600A2539E /* PlaidContentView.swift */,
 				6D6697D42C34927800A2539E /* Link.entitlements */,
 			);
 			path = Babka;
@@ -264,6 +255,17 @@
 				6D46A1062C12111400F951A1 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D6697D52C3CDB6400A2539E /* Plaid */ = {
+			isa = PBXGroup;
+			children = (
+				6D6697C72C338B6400A2539E /* ServerCommunicator.swift */,
+				6D6697C52C338B4B00A2539E /* ServerResponses.swift */,
+				6D6697CB2C33B1B300A2539E /* PlaidLinkViewController.swift */,
+				6D6697C92C338BD600A2539E /* PlaidTestView.swift */,
+			);
+			path = Plaid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,11 +423,9 @@
 				6D46A0E12C12088400F951A1 /* MongoDBConfig.swift in Sources */,
 				6D46A1022C1210BD00F951A1 /* TransactionRow.swift in Sources */,
 				6D46A0F92C12101500F951A1 /* TransactionDetailView.swift in Sources */,
-				6D6697D12C3490E900A2539E /* LinkController.swift in Sources */,
 				6D6697C62C338B4B00A2539E /* ServerResponses.swift in Sources */,
 				6D46A0F32C120FE700F951A1 /* CategoryView.swift in Sources */,
 				6D46A1152C1224C200F951A1 /* AddTransactionView.swift in Sources */,
-				6D6697D32C34913600A2539E /* PlaidContentView.swift in Sources */,
 				6D6697CC2C33B1B300A2539E /* PlaidLinkViewController.swift in Sources */,
 				6D46A0F12C120FDF00F951A1 /* TransactionListView.swift in Sources */,
 				6D46A0FF2C12109E00F951A1 /* LogoutButton.swift in Sources */,

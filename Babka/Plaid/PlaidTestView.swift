@@ -45,6 +45,8 @@ struct BaseView: View {
                     makeSimpleCallWasPressed()
                 }.disabled(!isCallButtonEnabled)
                 Text(simpleCallResults)
+                Spacer()
+                LogoutButton()
             }
         }.onAppear(perform: {
            determineUserStatus()

@@ -23,17 +23,16 @@ struct BabkaApp: SwiftUI.App {
     
     var body: some Scene {
         WindowGroup {
-            //PlaidTestView()
-            BaseView()
-//            ContentView(app: app)
-//                .environmentObject(errorHandler)
-////                .environmentObject(transactionListVM)
-//                .alert(Text("Error"), isPresented: .constant(errorHandler.error != nil)) {
-//                    Button("OK", role: .cancel) { errorHandler.error = nil }
-//                } message: {
-//                    Text(errorHandler.error?.localizedDescription ?? "")
-//                }
-//  
+
+            ContentView(app: app)
+                .environmentObject(errorHandler)
+//                .environmentObject(transactionListVM)
+                .alert(Text("Error"), isPresented: .constant(errorHandler.error != nil)) {
+                    Button("OK", role: .cancel) { errorHandler.error = nil }
+                } message: {
+                    Text(errorHandler.error?.localizedDescription ?? "")
+                }
+  
                 
         }
     }
