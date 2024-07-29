@@ -66,7 +66,7 @@ class PlaidLinkViewController: UIViewController {
     
     private func fetchLinkToken() {
       
-        self.communicator.callMyServer(path: "/server/generate_link_token", httpMethod: .post) { (result: Result<LinkTokenCreateResponse, ServerCommunicator.Error>) in
+        self.communicator.callMyServer(path: "/api/create_link_token", httpMethod: .post) { (result: Result<LinkTokenCreateResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(let response):
                 self.linkToken = response.linkToken
