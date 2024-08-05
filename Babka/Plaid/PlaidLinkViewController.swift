@@ -52,7 +52,7 @@ class PlaidLinkViewController: UIViewController {
     
     private func exchangePublicTokenForAccessToken(_ publicToken: String) {
         // Exchange our public token for an access token
-        self.communicator.callMyServer(path: "/server/swap_public_token", httpMethod: .post, params: ["public_token": publicToken]) {(result: Result<SwapPublicTokenResponse, ServerCommunicator.Error>) in
+        self.communicator.callMyServer(path: "/server/tokens/swap_public_token", httpMethod: .post, params: ["public_token": publicToken]) {(result: Result<SwapPublicTokenResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(_):
                 // TODO: actually look at the value of the respond
@@ -66,7 +66,7 @@ class PlaidLinkViewController: UIViewController {
     
     private func fetchLinkToken() {
       
-        self.communicator.callMyServer(path: "/api/create_link_token", httpMethod: .post) { (result: Result<LinkTokenCreateResponse, ServerCommunicator.Error>) in
+        self.communicator.callMyServer(path: "/server/tokens/create_link_token", httpMethod: .post) { (result: Result<LinkTokenCreateResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(let response):
                 self.linkToken = response.linkToken

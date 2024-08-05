@@ -46,6 +46,9 @@ struct BaseView: View {
                 }.disabled(!isCallButtonEnabled)
                 Text(simpleCallResults)
                 Spacer()
+                Button("get transactions"){
+                    getTransactions()
+                }
                 LogoutButton()
             }
         }.onAppear(perform: {
@@ -55,7 +58,7 @@ struct BaseView: View {
     
     func makeSimpleCallWasPressed() {
         // Ask our server to make a call to the Plaid API on behalf of our user
-        self.communicator.callMyServer(path: "server/simple_auth", httpMethod: .get) { (result: Result<SimpleAuthResponse, ServerCommunicator.Error>) in
+        self.communicator.callMyServer(path: "server/tokens/simple_auth", httpMethod: .get) { (result: Result<SimpleAuthResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(let response ):
                 simpleCallResults = "i revtrevied routing number \(response.routingNumber) for \(response.accountName) (xxxxxxxxxxx\(response.accountMask))"
@@ -64,6 +67,19 @@ struct BaseView: View {
             }
             
         }
+    }
+    
+    func getTransactions() {
+        self.communicator.callMyServer(path: "server/transactions/sync", httpMethod: .post) { (result: Result<SimpleAuthResponse, ServerCommunicator.Error>) in
+            switch result {
+            case .success(let response ):
+                print("successfully got transactions")
+            case .failure(let error):
+                print("Got an error \(error)")
+            }
+            
+        }
+
     }
 
     private func determineUserStatus() {
