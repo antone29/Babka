@@ -14,8 +14,8 @@
             filePath = "Babka/Plaid/PlaidTestView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "determineUserStatus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,10 +30,40 @@
             filePath = "Babka/Plaid/PlaidTestView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "makeSimpleCallWasPressed()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE6D9F74-E17A-4CA1-93F4-707A9088F452 - a5febeadb27b7bae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Babka.BaseView.makeSimpleCallWasPressed() -&gt; ()"
+                  moduleName = "Babka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bekkiantonelli/Development/Babka/Babka/Plaid/PlaidTestView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64">
+               </Location>
+               <Location
+                  uuid = "EE6D9F74-E17A-4CA1-93F4-707A9088F452 - 98b731a27cb4f901"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Babka.SimpleAuthResponse, Babka.ServerCommunicator.Error&gt;) -&gt; () in Babka.BaseView.makeSimpleCallWasPressed() -&gt; ()"
+                  moduleName = "Babka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bekkiantonelli/Development/Babka/Babka/Plaid/PlaidTestView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,6 +80,36 @@
             endingLineNumber = "54"
             landmarkName = "exchangePublicTokenForAccessToken(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F2CBD2D-3DCD-4227-9455-BDE02DB0917A - 6c5d80713e19882a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Babka.PlaidLinkViewController.exchangePublicTokenForAccessToken(Swift.String) -&gt; ()"
+                  moduleName = "Babka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bekkiantonelli/Development/Babka/Babka/Plaid/PlaidLinkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "7F2CBD2D-3DCD-4227-9455-BDE02DB0917A - 9d936af607f4f990"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Babka.SwapPublicTokenResponse, Babka.ServerCommunicator.Error&gt;) -&gt; () in Babka.PlaidLinkViewController.exchangePublicTokenForAccessToken(Swift.String) -&gt; ()"
+                  moduleName = "Babka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bekkiantonelli/Development/Babka/Babka/Plaid/PlaidLinkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,8 +154,8 @@
             filePath = "Babka/Plaid/PlaidTestView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "determineUserStatus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +170,8 @@
             filePath = "Babka/Plaid/PlaidTestView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "determineUserStatus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,10 +186,40 @@
             filePath = "Babka/Plaid/PlaidTestView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "determineUserStatus()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "03B91E2D-3F5C-488D-A4EE-F7BFA9BFFEA4 - 7943d408bb5ee96e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Babka.BaseView.determineUserStatus() -&gt; ()"
+                  moduleName = "Babka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bekkiantonelli/Development/Babka/Babka/Plaid/PlaidTestView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102">
+               </Location>
+               <Location
+                  uuid = "03B91E2D-3F5C-488D-A4EE-F7BFA9BFFEA4 - a0c362a56b883e72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Babka.UserStatusResponse, Babka.ServerCommunicator.Error&gt;) -&gt; () in Babka.BaseView.determineUserStatus() -&gt; ()"
+                  moduleName = "Babka"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bekkiantonelli/Development/Babka/Babka/Plaid/PlaidTestView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,10 +232,106 @@
             filePath = "Babka/Plaid/PlaidTestView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1242A52-F3AC-4469-86FA-9DB68672CCD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Babka/Plaid/PlaidTestView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "transactionsList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66F79362-6991-427C-809B-9BFBE01E5FCE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Babka/Plaid/PlaidTestView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "transactionsList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA134786-5BAA-46F4-B12D-3DB1328F2811"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Babka/Plaid/ServerCommunicator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "callMyServer(path:httpMethod:params:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44FF3EB0-EFAD-45E9-805C-5B8DF5EC8047"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Babka/Plaid/ServerCommunicator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "callMyServer(path:httpMethod:params:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "127EDFF5-36D0-4274-9152-3F6A1937A2A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Babka/Plaid/ServerCommunicator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "callMyServer(path:httpMethod:params:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F262C9BE-0B34-4DCE-A480-1B308545E09A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Babka/Plaid/ServerCommunicator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "callMyServer(path:httpMethod:params:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

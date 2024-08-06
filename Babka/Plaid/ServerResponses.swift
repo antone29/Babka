@@ -32,4 +32,3 @@ struct SimpleAuthResponse: Codable{
     let accountMask: String
     let routingNumber: String
 }
- 

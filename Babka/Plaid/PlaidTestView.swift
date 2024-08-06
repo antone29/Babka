@@ -46,8 +46,11 @@ struct BaseView: View {
                 }.disabled(!isCallButtonEnabled)
                 Text(simpleCallResults)
                 Spacer()
-                Button("get transactions"){
-                    getTransactions()
+                Button("transactions sync"){
+                    transactionSync()
+                }
+                Button("transactions list"){
+                    transactionsList()
                 }
                 LogoutButton()
             }
@@ -69,11 +72,11 @@ struct BaseView: View {
         }
     }
     
-    func getTransactions() {
-        self.communicator.callMyServer(path: "server/transactions/sync", httpMethod: .post) { (result: Result<SimpleAuthResponse, ServerCommunicator.Error>) in
+    func transactionSync() {
+        self.communicator.callMyServer(path: "server/transactions/sync", httpMethod: .post) { (result: Result<[Transaction2], ServerCommunicator.Error>) in
             switch result {
             case .success(let response ):
-                print("successfully got transactions")
+                print("successfully got transactions to sync")
             case .failure(let error):
                 print("Got an error \(error)")
             }
@@ -81,6 +84,18 @@ struct BaseView: View {
         }
 
     }
+    
+    func transactionsList() {
+        self.communicator.callMyServer(path: "server/transactions/list", httpMethod: .get) { (result: Result<[Transaction2], ServerCommunicator.Error>) in
+            switch result {
+            case .success(let response ):
+               print(response)
+            case .failure(let error):
+                print("Got an error \(error)")
+            }
+            
+        }
+    }   
 
     private func determineUserStatus() {
         self.communicator.callMyServer(path: "/server/get_user_info", httpMethod: .get) {

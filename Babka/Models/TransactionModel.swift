@@ -10,6 +10,49 @@ import Foundation
 import SwiftUIFontIcon
 import RealmSwift
 
+
+struct Transaction2: Codable {
+    let id, category: String
+    let bankName: BankName
+    let amount: Double
+    let userID: String
+    let currencyCode: CurrencyCode
+    let accountName: AccountName
+    let date: String
+    let authorizedDate: String?
+    let isRemoved: Int
+    let accountID, name: String
+
+    enum CodingKeys: String, CodingKey {
+        case id, category
+        case bankName = "bank_name"
+        case amount
+        case userID = "user_id"
+        case currencyCode = "currency_code"
+        case accountName = "account_name"
+        case date
+        case authorizedDate = "authorized_date"
+        case isRemoved = "is_removed"
+        case accountID = "account_id"
+        case name
+    }
+}
+
+enum AccountName: String, Codable {
+    case plaidChecking = "Plaid Checking"
+    case plaidSaving = "Plaid Saving"
+}
+
+enum BankName: String, Codable {
+    case tdBank = "TD Bank"
+}
+
+enum CurrencyCode: String, Codable {
+    case usd = "USD"
+}
+
+typealias Trans = [Transaction2]
+
 class Transaction: Object, ObjectKeyIdentifiable, Identifiable, Decodable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var date: Date
