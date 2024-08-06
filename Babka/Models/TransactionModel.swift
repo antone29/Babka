@@ -11,7 +11,17 @@ import SwiftUIFontIcon
 import RealmSwift
 
 
-struct Transaction2: Codable {
+class ClientTransactionList: ObservableObject {
+    @Published var translist : [Transaction2]
+    let communicator = ServerCommunicator()
+    init(translist: [Transaction2]) {
+        self.translist = translist
+    }
+    
+
+}
+
+struct Transaction2:  Codable {
     let id, category: String
     let bankName: BankName
     let amount: Double
