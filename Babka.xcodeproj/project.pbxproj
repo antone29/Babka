@@ -10,6 +10,9 @@
 		6D3F6FA42C18B2F400611177 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3F6FA32C18B2F400611177 /* Collections */; };
 		6D3F6FA62C18E46A00611177 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F6FA52C18E46A00611177 /* TransactionListViewModel.swift */; };
 		6D410A1D2C62AFAC009C5CA6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410A1C2C62AFAC009C5CA6 /* Service.swift */; };
+		6D410A1F2C63CEAF009C5CA6 /* ClientTransactionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410A1E2C63CEAF009C5CA6 /* ClientTransactionDataModel.swift */; };
+		6D410A212C63EA89009C5CA6 /* BanksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410A202C63EA89009C5CA6 /* BanksDataModel.swift */; };
+		6D410A232C63EAC5009C5CA6 /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410A222C63EAC5009C5CA6 /* BankModel.swift */; };
 		6D46A0B62C12052D00F951A1 /* BabkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0B52C12052D00F951A1 /* BabkaApp.swift */; };
 		6D46A0B82C12052D00F951A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46A0B72C12052D00F951A1 /* ContentView.swift */; };
 		6D46A0BA2C12052F00F951A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D46A0B92C12052F00F951A1 /* Assets.xcassets */; };
@@ -79,6 +82,9 @@
 /* Begin PBXFileReference section */
 		6D3F6FA52C18E46A00611177 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
 		6D410A1C2C62AFAC009C5CA6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		6D410A1E2C63CEAF009C5CA6 /* ClientTransactionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTransactionDataModel.swift; sourceTree = "<group>"; };
+		6D410A202C63EA89009C5CA6 /* BanksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksDataModel.swift; sourceTree = "<group>"; };
+		6D410A222C63EAC5009C5CA6 /* BankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
 		6D46A0B22C12052D00F951A1 /* Babka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D46A0B52C12052D00F951A1 /* BabkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabkaApp.swift; sourceTree = "<group>"; };
 		6D46A0B72C12052D00F951A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -236,6 +242,9 @@
 			isa = PBXGroup;
 			children = (
 				6D46A10C2C1220BA00F951A1 /* TransactionModel.swift */,
+				6D410A1E2C63CEAF009C5CA6 /* ClientTransactionDataModel.swift */,
+				6D410A202C63EA89009C5CA6 /* BanksDataModel.swift */,
+				6D410A222C63EAC5009C5CA6 /* BankModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -432,7 +441,9 @@
 				6D6697CC2C33B1B300A2539E /* PlaidLinkViewController.swift in Sources */,
 				6D46A0F12C120FDF00F951A1 /* TransactionListView.swift in Sources */,
 				6D46A0FF2C12109E00F951A1 /* LogoutButton.swift in Sources */,
+				6D410A212C63EA89009C5CA6 /* BanksDataModel.swift in Sources */,
 				6D46A1072C12111400F951A1 /* Extensions.swift in Sources */,
+				6D410A1F2C63CEAF009C5CA6 /* ClientTransactionDataModel.swift in Sources */,
 				6D46A0F52C120FF400F951A1 /* ProfileView.swift in Sources */,
 				6D410A1D2C62AFAC009C5CA6 /* Service.swift in Sources */,
 				6D46A0FD2C12108800F951A1 /* LoginView.swift in Sources */,
@@ -440,6 +451,7 @@
 				6D46A0FB2C12106500F951A1 /* SetBudgetView.swift in Sources */,
 				6D46A0B62C12052D00F951A1 /* BabkaApp.swift in Sources */,
 				6D6697C82C338B6400A2539E /* ServerCommunicator.swift in Sources */,
+				6D410A232C63EAC5009C5CA6 /* BankModel.swift in Sources */,
 				6D46A1092C12112D00F951A1 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
