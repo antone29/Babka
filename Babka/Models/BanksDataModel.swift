@@ -11,3 +11,4 @@ import Foundation
 //class BanksDataModel: ObservableObject {
 //    @Published var bankList: Bank
 //}
+ 
