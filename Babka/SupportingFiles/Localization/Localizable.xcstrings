@@ -1,0 +1,140 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add a category" : {
+
+    },
+    "Add a date" : {
+
+    },
+    "Add a location" : {
+
+    },
+    "Add a new transaction" : {
+
+    },
+    "Add an amount" : {
+
+    },
+    "Amount" : {
+
+    },
+    "Budget" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Category" : {
+
+    },
+    "Connect to Bank" : {
+
+    },
+    "ContentView.WelcomeMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, World!"
+          }
+        }
+      }
+    },
+    "Create Account" : {
+
+    },
+    "Email" : {
+
+    },
+    "Error: %@" : {
+
+    },
+    "Finish" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "location" : {
+
+    },
+    "Log In" : {
+
+    },
+    "Log Out" : {
+
+    },
+    "Login.LoginButton.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        }
+      }
+    },
+    "Login.PasswordField.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        }
+      }
+    },
+    "Login.UsernameField.Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username"
+          }
+        }
+      }
+    },
+    "Make a simple call" : {
+
+    },
+    "My Sync App" : {
+
+    },
+    "Password" : {
+
+    },
+    "Please log in or register with a Device Sync user account. This is separate from your Atlas Cloud login" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Select a category" : {
+
+    },
+    "Select a Date" : {
+
+    },
+    "Spending" : {
+
+    },
+    "Transactions" : {
+
+    },
+    "transactions list" : {
+
+    },
+    "transactions sync" : {
+
+    },
+    "Waiting for user to log in..." : {
+
+    }
+  },
+  "version" : "1.0"
+}

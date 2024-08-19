@@ -11,7 +11,7 @@ import RealmSwift
 struct AddTransactionView: View {
     @ObservedResults(Transaction.self) var transactions
     @Environment(\.realm) var realm
-    @EnvironmentObject var errorHandler: ErrorHandler
+   // @EnvironmentObject var errorHandler: ErrorHandler
     @Binding var showingAddTransaction: Bool
     
     
@@ -94,7 +94,7 @@ struct AddTransactionView: View {
         } catch {
             //maybe a pop up?
             print("Failed to log in user: \(error.localizedDescription)")
-            errorHandler.error = error
+           // errorHandler.error = error
         }
            
        }
