@@ -11,7 +11,8 @@ import SwiftUIFontIcon
 
 
 struct TransactionRow: View {
-    var transaction: Transaction
+//    var transaction: Transaction
+    var transaction: Transaction2
    
     
     
@@ -21,14 +22,15 @@ struct TransactionRow: View {
             RoundedRectangle(cornerRadius: 20, style:  .continuous)
                 .fill(Color.icon2.opacity(0.3))
                 .frame(width: 44, height: 44)
-                .overlay{
-                    //using custom icons
-                    FontIcon.text(.awesome5Solid(code: transaction.icon), fontsize: 24, color: Color.icon2)
-                }
+//                .overlay{
+//                    //using custom icons
+//                    FontIcon.text(.awesome5Solid(code: transaction.icon), fontsize: 24, color: Color.icon2)
+//                }
             
             VStack(alignment: .leading, spacing: 6 ){
                 // MARK: Transaction Merchant
-                Text(transaction.merchant)
+              //  Text(transaction.merchant)
+                Text(transaction.name)
                     .font(.subheadline)
                     .bold()
                     .lineLimit(1)
@@ -40,7 +42,8 @@ struct TransactionRow: View {
                     .lineLimit(1)
                 
                 //MARK: Transaction Date
-                Text(transaction.date.dateParsed())
+//                Text(transaction.date.dateParsed())
+                Text(transaction.date)
                     .font(.footnote)
                     .foregroundColor(.secondary)
                     
@@ -49,9 +52,10 @@ struct TransactionRow: View {
             Spacer()
             
             // MARK: Transaction Amount
-            Text(transaction.signedAmount, format: .currency(code: "USD"))
+           // Text(transaction.signedAmount, format: .currency(code: "USD"))
+            Text(transaction.amount, format: .currency(code: "USD"))
                 .bold()
-                .foregroundColor(transaction.type == TransactionType.credit.rawValue ? Color.text2 : .primary)
+//                .foregroundColor(transaction.type == TransactionType.credit.rawValue ? Color.text2 : .primary)
             
         }
         .padding([.top, .bottom], 8)

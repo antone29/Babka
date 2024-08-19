@@ -33,6 +33,8 @@ struct BaseView: View {
     @State var isCallButtonEnabled = false
     @State var isConnectToPlaidEnabled = false
     
+ 
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -47,10 +49,10 @@ struct BaseView: View {
                 Text(simpleCallResults)
                 Spacer()
                 Button("transactions sync"){
-                    transactionSync()
+                 //   transactionSync()
                 }
                 Button("transactions list"){
-                    transactionsList()
+                   // transactionsList()
                 }
                 LogoutButton()
             }
@@ -64,6 +66,7 @@ struct BaseView: View {
         self.communicator.callMyServer(path: "server/tokens/simple_auth", httpMethod: .get) { (result: Result<SimpleAuthResponse, ServerCommunicator.Error>) in
             switch result {
             case .success(let response ):
+             
                 simpleCallResults = "i revtrevied routing number \(response.routingNumber) for \(response.accountName) (xxxxxxxxxxx\(response.accountMask))"
             case .failure(let error):
                 print("Got an error \(error)")
@@ -71,31 +74,7 @@ struct BaseView: View {
             
         }
     }
-    
-    func transactionSync() {
-        self.communicator.callMyServer(path: "server/transactions/sync", httpMethod: .post) { (result: Result<[Transaction2], ServerCommunicator.Error>) in
-            switch result {
-            case .success(let response ):
-                print("successfully got transactions to sync")
-            case .failure(let error):
-                print("Got an error \(error)")
-            }
-            
-        }
-
-    }
-    
-    func transactionsList() {
-        self.communicator.callMyServer(path: "server/transactions/list", httpMethod: .get) { (result: Result<[Transaction2], ServerCommunicator.Error>) in
-            switch result {
-            case .success(let response ):
-               print(response)
-            case .failure(let error):
-                print("Got an error \(error)")
-            }
-            
-        }
-    }   
+     
 
     private func determineUserStatus() {
         self.communicator.callMyServer(path: "/server/get_user_info", httpMethod: .get) {

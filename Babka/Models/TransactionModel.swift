@@ -11,17 +11,8 @@ import SwiftUIFontIcon
 import RealmSwift
 
 
-class ClientTransactionList: ObservableObject {
-    @Published var translist : [Transaction2]
-    let communicator = ServerCommunicator()
-    init(translist: [Transaction2]) {
-        self.translist = translist
-    }
+class Transaction2:  Codable,  ObservableObject, Identifiable{
     
-
-}
-
-struct Transaction2:  Codable {
     let id, category: String
     let bankName: BankName
     let amount: Double
@@ -46,6 +37,20 @@ struct Transaction2:  Codable {
         case accountID = "account_id"
         case name
     }
+}
+
+extension Transaction2 : Hashable {
+
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+
+    }
+    static func == (lhs: Transaction2, rhs: Transaction2) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    
 }
 
 enum AccountName: String, Codable {

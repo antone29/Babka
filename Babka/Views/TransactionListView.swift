@@ -18,70 +18,82 @@ struct TransactionListView: View {
     @State private var selection = Category.billsAndUtilities
     let categories = Category.categories
     
+    @StateObject private var clientTransactionDataModel = ClientTransactionDataModel()
+    
+    
     
     
     var body: some View {
-        VStack {
+        ScrollView{
+        LazyVStack {
             Picker("Select a category", selection: $selection) {
                 ForEach(categories, id: \.self) {
                     Text($0.name)
                 }
             }
-//            .pickerStyle(.menu)
+            ForEach(clientTransactionDataModel.translist, id: \.self) { each in
+                TransactionRow(transaction: each)
+            }
+            
+            //            .pickerStyle(.menu)
             List {
                 // MARK: Transaction Groups
-                ForEach(Array(transactionListVM.groupTransactionsByCategory()), id: \.key) { month,
-                    transactions in
-                    Section {
-                        ForEach(transactions) { transaction in
-                            TransactionRow(transaction: transaction)
-                            
-                        }
-                    } header: {
-                        // MARK: Transaction month
-                        Text(month)
-                    }.listSectionSeparator(.hidden)
-            
-                }
-               
-//                ForEach(transactions, id: \.self) { transaction in
-//                    NavigationLink(destination: TransactionDetailView(transaction: transaction)){
-//                        TransactionRow(transaction: transaction)
-//                    }
-//                
-//                    
-//                }
+                //                ForEach(Array(transactionListVM.groupTransactionsByCategory()), id: \.key) { month,
+                //                    transactions in
+                //                    Section {
+                //                        ForEach(transactions) { transaction in
+                //                            TransactionRow(transaction: transaction)
+                //
+                //                        }
+                //                    } header: {
+                //                        // MARK: Transaction month
+                //                        Text(month)
+                //                    }.listSectionSeparator(.hidden)
+                //
+                //                }
+                
+                
+                //                ForEach(transactions, id: \.self) { transaction in
+                //                    NavigationLink(destination: TransactionDetailView(transaction: transaction)){
+                //                        TransactionRow(transaction: transaction)
+                //                    }
+                //
+                //                }
+            }
+            .task{
+                await self.clientTransactionDataModel.transactionsList()
             }
             .searchable(text: $searchFilter,
-                                    collection: $transactions,
+                        collection: $transactions,
                         keyPath: \.merchant) {
-                            ForEach(transactions) { transactionsFiltered in
-                                Text(transactionsFiltered.merchant).searchCompletion(transactionsFiltered.merchant)
-                            }
-                        }
-            .listStyle(.plain)
-            .toolbar {
-                // MARK: Notification Icon
-                //                ToolbarItem {
-                //                    Image(systemName: "bell.badge")
-                //                        .symbolRenderingMode(.palette)
-                //                        .foregroundStyle(Color.icon2, .primary)
-                //                }
-                ToolbarItem {
-                    Image(systemName: "plus.app")
-                        .symbolRenderingMode(.palette)
-                        .foregroundStyle(Color.icon2, .primary)
-                        .onTapGesture {
-                            showingAddTransaction.toggle()
-                        }
-                        .sheet(isPresented: $showingAddTransaction) {
-                            AddTransactionView( showingAddTransaction: $showingAddTransaction)
-                        }
+                ForEach(transactions) { transactionsFiltered in
+                    Text(transactionsFiltered.merchant).searchCompletion(transactionsFiltered.merchant)
                 }
             }
+                        .listStyle(.plain)
+                        .toolbar {
+                            // MARK: Notification Icon
+                            //                ToolbarItem {
+                            //                    Image(systemName: "bell.badge")
+                            //                        .symbolRenderingMode(.palette)
+                            //                        .foregroundStyle(Color.icon2, .primary)
+                            //                }
+                            ToolbarItem {
+                                Image(systemName: "plus.app")
+                                    .symbolRenderingMode(.palette)
+                                    .foregroundStyle(Color.icon2, .primary)
+                                    .onTapGesture {
+                                        showingAddTransaction.toggle()
+                                    }
+                                    .sheet(isPresented: $showingAddTransaction) {
+                                        AddTransactionView( showingAddTransaction: $showingAddTransaction)
+                                    }
+                            }
+                        }
         }
         .navigationTitle("Transactions")
         .navigationBarTitleDisplayMode(.inline)
+    }
     }
     
 //    func groupTranactionsByMonth() -> TransactionGroup {
